@@ -31,7 +31,13 @@ export const Header = () => {
           />
         )}
       </header>
-      {aberto ? <Menu /> : null}
+      {aberto ? (
+        <Menu
+          fecharMenu={() => {
+            setAberto(false);
+          }}
+        />
+      ) : null}
     </>
   );
 };
