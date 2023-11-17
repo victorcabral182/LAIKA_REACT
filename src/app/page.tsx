@@ -1,23 +1,20 @@
-"use client";
-import { Header } from "@/components/Header";
-import Image from "next/image";
-import capa from "../assets/imagens/Capa.png";
-import { Sociais } from "@/components/Sociais";
-import Corpo from "@/components/Corpo";
-import { Play } from "@/components/Play";
-import Rodape from "@/components/Rodape";
+"use client"
+
+import Image from "next/image"
+import capa from "../assets/imagens/Capa.png"
+import ImageSlider from "@/components/ImageSlider"
+import { Socials } from "@/components/Socials"
+import { Player } from "@/components/Player"
 
 export default function Home() {
   return (
     <>
-      <Header />
       <Image className="w-full" src={capa} alt="" />
-      <Sociais />
-      <Corpo />
+      <Socials />
+      <ImageSlider />
       <div className="p-3 bg-[#1B1C1C]">
-        <Play />
+        <Player url="https://www.youtube.com/embed/0nFten1JIwo?si=kX8oORLAyvI0l3Ks" />
       </div>
-      <Rodape/>
     </>
-  );
+  )
 }
