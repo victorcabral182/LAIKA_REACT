@@ -6,10 +6,11 @@ import { Sociais } from "@/components/Sociais";
 import Corpo from "@/components/Corpo";
 import { Play } from "@/components/Play";
 import Rodape from "@/components/Rodape";
+import { Menu } from "@/components/Menu";
 
 export default function Home() {
   return (
-    <>
+    <main className="relative">
       <Header />
       <Image className="w-full" src={capa} alt="" />
       <Sociais />
@@ -17,7 +18,7 @@ export default function Home() {
       <div className="p-3 bg-[#1B1C1C]">
         <Play />
       </div>
-      <Rodape/>
-    </>
+      <Rodape />
+    </main>
   );
 }
