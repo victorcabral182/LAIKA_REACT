@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
-import Image from "next/image"
-import capa from "../assets/imagens/Capa.png"
-import ImageSlider from "@/components/ImageSlider"
-import { Socials } from "@/components/Socials"
-import { Player } from "@/components/Player"
+import Image from "next/image";
+import capa from "../assets/imagens/Capa.png";
+import ImageSlider from "@/components/ImageSlider";
+import { Socials } from "@/components/Socials";
+import { Player } from "@/components/Player";
 
 export default function Home() {
   return (
@@ -16,5 +16,5 @@ export default function Home() {
         <Player url="https://www.youtube.com/embed/0nFten1JIwo?si=kX8oORLAyvI0l3Ks" />
       </div>
     </>
-  )
+  );
 }
