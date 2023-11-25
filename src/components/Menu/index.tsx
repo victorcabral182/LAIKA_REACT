@@ -17,7 +17,7 @@ export const Menu = ({ fecharMenu }: MenuProps) => {
       <Link onClick={fecharMenu} className="text-[24px]" href={""}>
         MERCH
       </Link>
-      <Link onClick={fecharMenu} className="text-[24px]" href={""}>
+      <Link onClick={fecharMenu} className="text-[24px]" href={"/tour"}>
         TOUR
       </Link>
       <Image className="absolute right-[42px]" src={dog} alt="dog" />
