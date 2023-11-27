@@ -12,6 +12,7 @@ export default function Home() {
       <Image className="w-full" src={capa} alt="" />
       <Socials />
       <ImageSlider />
+
       <div className="p-3 bg-[#1B1C1C]">
         <Player url="https://www.youtube.com/embed/0nFten1JIwo?si=kX8oORLAyvI0l3Ks" />
       </div>
