@@ -19,7 +19,7 @@ export const Menu = ({ fecharMenu, className }: MenuProps) => {
 
   return (
     <div
-      className={`transition-all duration-300 ease-linear flex flex-col justify-center p-[42px] w-[100vw] h-[calc(100vh-75px)] fixed top-[75px] bg-[#E8E7E7] z-10 gap-[64px] ${className}`}
+      className={`transition-all duration-300 ease-linear flex flex-col justify-center p-[42px] w-[100vw] h-[calc(100vh-75px)] fixed bg-[#E8E7E7] z-10 gap-[64px] ${className}`}
     >
       <Link
         onClick={fecharMenu}
