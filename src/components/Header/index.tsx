@@ -30,7 +30,7 @@ export const Header = () => {
         )}
       </header>
       <Menu
-        className={aberto ? "top-[75px] opacity-100" : "top-[-100vh] opacity-0"}
+        className={aberto ? "top-[75px] opacity-100" : "top-[-1000px] opacity-0"}
         fecharMenu={() => {
           setAberto(false);
         }}
