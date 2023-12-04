@@ -11,7 +11,7 @@ export const Header = () => {
 
   return (
     <>
-      <header className="fixed z-20 w-full h-[75px] bg-[#E8E7E7] flex justify-between items-center px-2 border border-opacity-10 border-b-[#000]">
+      <header className="fixed z-20 w-full h-[75px] bg-[#E8E7E7] flex justify-between items-center px-2 border border-opacity-10 border-b-[#000] md:px-[2.5%]">
         <Image src={logo} alt="laika" />
         {!aberto ? (
           <AiOutlineMenu
@@ -30,7 +30,9 @@ export const Header = () => {
         )}
       </header>
       <Menu
-        className={aberto ? "top-[75px] opacity-100" : "top-[-1000px] opacity-0"}
+        className={
+          aberto ? "top-[75px] opacity-100" : "top-[-1000px] opacity-0"
+        }
         fecharMenu={() => {
           setAberto(false);
         }}
