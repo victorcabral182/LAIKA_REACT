@@ -1,4 +1,11 @@
-export const CardEvents = ({ data, local, hora, evento }) => {
+interface CardEventsProps {
+  data: string
+  local: string
+  hora: string
+  evento: string
+}
+
+export const CardEvents = ({ data, local, hora, evento }: CardEventsProps) => {
   return (
     <>
       <div className="bg-[#E8E7E7] w-[70%] h-[142px] flex flex-col justify-center items-center">
