@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <div className="relative">
-        <Image className="w-full z-10 md:px-[10%]" src={capa} alt="" />
+        <Image className="w-full z-10 md:px-[10%] " src={capa} alt="" />
         <Image
           className="w-full -z-10 absolute top-0 opacity-20"
           src={outerSpace}

@@ -10,19 +10,19 @@ function ImageSlider() {
   const items = [
     <Image
       key={1}
-      className="w-full max-h-[380px] md:max-h-[614px]"
+      className="w-full max-h-[380px] md:max-h-[614px] lg:max-h-[768px]"
       src={laika1}
       alt="laika"
     />,
     <Image
       key={2}
-      className="w-full max-h-[380px] md:max-h-[614px]"
+      className="w-full max-h-[380px] md:max-h-[614px] lg:max-h-[768px]"
       src={laika2}
       alt="laika2"
     />,
     <Image
       key={3}
-      className="w-full max-h-[380px] md:max-h-[614px]"
+      className="w-full max-h-[380px] md:max-h-[614px] lg:max-h-[768px]"
       src={laika3}
       alt="laika3"
     />,
