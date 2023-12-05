@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import { Player } from "@/components/Player"
+import { Player } from "@/components/Player";
 
 export default function Videos() {
   const videosList = [
@@ -20,15 +20,15 @@ export default function Videos() {
       id: 4,
       url: "https://www.youtube.com/embed/LH2CU1MYkIc?si=XlGiNEI5OqOukAI6",
     },
-  ]
+  ];
 
   return (
     <>
-      <div className="flex flex-col gap-4 bg-[#1B1C1C] p-4">
+      <div className="flex flex-col gap-4 bg-[#1B1C1C] p-4 md:px-[10%] md:py-[32px]">
         {videosList.map((item) => (
           <Player key={item.id} url={item.url} />
         ))}
       </div>
     </>
-  )
+  );
 }

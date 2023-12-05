@@ -4,7 +4,7 @@ import et from "../../assets/imagens/et.png";
 
 const Rodape = () => {
   return (
-    <footer className=" w-full flex justify-between items-center h-[75px] bg-[#575959]">
+    <footer className="w-full flex justify-between items-center h-[75px] bg-[#575959] md:px-[2%] lg:px-[10%]">
       <Image src={et} alt="et" width={60} height={60} />
       <div className="p-3">
         <p className="text-sm text-[#E8E7E7] text-left">

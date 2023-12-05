@@ -19,7 +19,7 @@ export const Menu = ({ fecharMenu, className }: MenuProps) => {
 
   return (
     <div
-      className={`transition-all duration-300 ease-linear flex flex-col justify-center p-[42px] w-[100vw] h-[calc(100vh-75px)] fixed bg-[#E8E7E7] z-10 gap-[64px] ${className}`}
+      className={`transition-all duration-300 ease-linear flex flex-col justify-center p-[42px] w-[100vw] h-[calc(100vh-75px)] fixed bg-[#E8E7E7] z-10 gap-[64px] md:px-[20%] ${className}`}
     >
       <Link
         onClick={fecharMenu}
@@ -41,7 +41,11 @@ export const Menu = ({ fecharMenu, className }: MenuProps) => {
       <Link onClick={fecharMenu} className="text-[24px]" href={"/tour"}>
         TOUR
       </Link> */}
-      <Image className="absolute right-[42px]" src={dog} alt="dog" />
+      <Image
+        className="absolute right-[42px] md:right-[20%]"
+        src={dog}
+        alt="dog"
+      />
     </div>
   );
 };
