@@ -1,8 +1,4 @@
-**<p align="center">Laika no Espaço - Página Oficial</p>**
-
-<p align="center">
-  <img src="link_para_a_logo.png" alt="Logo da Laika no Espaço">
-</p>
+**<p align="center">🚀 Laika no Espaço - Página Oficial 🎸</p>**
 
 ---
 
@@ -12,14 +8,32 @@ Este é o repositório oficial da página web da banda Laika no Espaço, desenvo
 
 ## Colaboradores
 
-- [Victor Cabral (@victorcabral182)](https://github.com/victorcabral182)
-- [Fill Dias (@fillDias)](https://github.com/fillDias)
+<div style="display: flex; justify-content: space-around; flex-direction: row;">
+  <div>
+    <p align="center">
+      <a href="https://github.com/fillDias">
+        <strong>Fill Dias (@fillDias)</strong>
+      </a>
+      <br>
+      <img src="https://github.com/fillDias.png" alt="Fill Dias" width="300">
+    </p>
+  </div>
+  <div>
+    <p align="center">
+      <a href="https://github.com/victorcabral182">
+        <strong>Victor Cabral (@victorcabral182)</strong>
+      </a>
+      <br>
+      <img src="https://github.com/victorcabral182.png" alt="Victor Cabral" width="300">
+    </p>
+  </div>
+</div>
 
 ## Tecnologias Utilizadas
 
-- [Next.js](https://nextjs.org/)
-- [React](https://reactjs.org/)
-- [TypeScript](https://www.typescriptlang.org/)
+- [Next.js](https://nextjs.org/) 🌐
+- [React](https://reactjs.org/) ⚛️
+- [TypeScript](https://www.typescriptlang.org/) 📜
 
 ## Funcionalidades
 
@@ -31,4 +45,4 @@ Este é o repositório oficial da página web da banda Laika no Espaço, desenvo
 
 ---
 
-**<p align="center">Divirta-se explorando a galáxia musical da Laika!</p>**
+**<p align="center">🎶 Divirta-se explorando a galáxia musical da Laika! 🚀</p>**
