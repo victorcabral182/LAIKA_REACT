@@ -37,11 +37,16 @@ Este é o repositório oficial da página web da banda Laika no Espaço, desenvo
 
 ## Funcionalidades
 
-- Página inicial com informações sobre a banda e últimas notícias.
+- Página inicial com informações sobre a banda e últimos lançamentos.
 - Seção de shows com datas, locais e informações sobre ingressos.
-- Discografia completa da banda, com detalhes sobre cada álbum e música.
 - Galeria de fotos e vídeos.
-- Formulário de contato para os fãs se comunicarem com a banda.
+- 
+
+### Funcionalidades a serem implementadas
+
+- Integração da seção de shows e informações sobre ingressos.
+- Página para exibir a discografia completa da banda, com detalhes sobre cada álbum e música.
+- Formulário de contato para os fãs assinarem newsletter.
 
 ---
 
