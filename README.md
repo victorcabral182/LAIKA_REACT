@@ -40,7 +40,6 @@ Este é o repositório oficial da página web da banda Laika no Espaço, desenvo
 - Página inicial com informações sobre a banda e últimos lançamentos.
 - Seção de shows com datas, locais e informações sobre ingressos.
 - Galeria de fotos e vídeos.
-- 
 
 ### Funcionalidades a serem implementadas
 
