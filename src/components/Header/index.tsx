@@ -17,11 +17,9 @@ export const Header = () => {
         <Image src={logo} alt="logo laika" className="w-[300px]" />
         <nav className="flex gap-[32px] font-bold text-[#E8E7E7] text-lg pr-4">
           <div className="p-2">S.L.D.S.E.M.A.N</div>
+          <div className="p-2">VÍDEOS</div>
           <div className="p-2">LETRAS</div>
-          <div className="p-2">RELEASE</div>
-          <Link href="#" className="p-2">
-            VIDEOS
-          </Link>
+          {/* <div className="p-2">RELEASE</div> */}
           <Link href="#" className="p-2">
             CONTATO
           </Link>
