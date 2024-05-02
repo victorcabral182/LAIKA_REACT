@@ -1,6 +1,6 @@
 "use client"
 
-import React from "react"
+import React, { useReducer } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import logo from "../../assets/imagens/logo-white.png"
@@ -9,6 +9,9 @@ import { SiTidal } from "react-icons/si"
 import { BsSpotify } from "react-icons/bs"
 import { AiFillYoutube } from "react-icons/ai"
 import { AiOutlineInstagram } from "react-icons/ai"
+import { MenuNav } from "../MenuNav"
+import { AiOutlineClose } from "react-icons/ai"
+import { AiOutlineMenu } from "react-icons/ai"
 
 interface IHeaderProps {
   blurMenu: boolean
@@ -21,15 +24,33 @@ export const Header = ({
   activeMenuItem,
   blurMenu,
 }: IHeaderProps) => {
+  const [isOpen, setIsOpen] = useReducer((isOpen) => !isOpen, false)
   return (
     <>
       <header
-        className={`transition-all duration-300 ease-in fixed w-full flex justify-between items-center px-2 py-1 z-50 ${
+        className={`transition-all duration-300 ease-in fixed w-full flex justify-between items-center px-2 py-2 xl:py-1 z-40 ${
           blurMenu ? "bg-transparent backdrop-blur-xl hover:bg-[#1B1C1C]" : ""
         } `}
       >
-        <Image src={logo} alt="logo laika" className="w-[300px]" priority />
-        <nav className={`flex gap-[32px] font-bold text-lg pr-4`}>
+        <Image
+          src={logo}
+          alt="logo laika"
+          className="w-[160px] xl:w-[300px] z-50"
+          priority
+        />
+        <div
+          className={`z-50 lg:hidden mr-2 text-[#E8E7E7] transition-all duration-500 ease-in-out ${
+            isOpen ? "rotate-[360deg]" : "rotate-0"
+          }`}
+          onClick={setIsOpen}
+        >
+          {!isOpen ? <AiOutlineMenu size={24} /> : <AiOutlineClose size={24} />}
+        </div>
+        {/* <nav
+          className={`fixed z-30 left-0 top-0 flex flex-col items-center justify-center bg-[#1B1C1C] w-[100vw] h-[100vh] transition-all duration-150 ease-in-out ${
+            !isOpen ? "top-[-200%]" : "top-0"
+          }`}
+        >
           <div
             onClick={() => scrollTo(1)}
             className={`${
@@ -62,43 +83,44 @@ export const Header = ({
           >
             CONTATO
           </div>
-        </nav>
+        </nav> */}
+        <MenuNav activeMenuItem={activeMenuItem} scrollTo={scrollTo} />
       </header>
-      <div className="fixed flex flex-col gap-10 bottom-4 left-4 z-50">
+      <div className="fixed flex flex-col gap-4 bottom-4 left-4 z-20">
         <Link
           target="_blank"
           href="https://www.instagram.com/laikanoespaco/"
-          className="transition-all ease-in-out duration-300 bg-[#575959] p-3 rounded-full hover:text-[#1B1C1C] text-[#E8E7E7] hover:bg-[#8381BD]"
+          className="transition-all ease-in-out duration-300 xl:bg-[#575959] p-2 xl:p-3 rounded-full hover:text-[#1B1C1C] text-[#E8E7E7] hover:bg-[#8381BD] bg-transparent backdrop-blur-xl"
         >
-          <AiOutlineInstagram size={24} />
+          <AiOutlineInstagram className="text-[24px]" />
         </Link>
         <Link
           target="_blank"
           href="https://www.youtube.com/@LaikaNoEspaco"
-          className="transition-all ease-in-out duration-300 bg-[#575959] p-3 rounded-full hover:text-[#1B1C1C] text-[#E8E7E7] hover:bg-[#8381BD]"
+          className="transition-all ease-in-out duration-300 xl:bg-[#575959] p-2 xl:p-3 rounded-full hover:text-[#1B1C1C] text-[#E8E7E7] hover:bg-[#8381BD] bg-transparent backdrop-blur-xl"
         >
-          <AiFillYoutube size={24} />
+          <AiFillYoutube className="text-[24px]" />
         </Link>
         <Link
           target="_blank"
           href="https://open.spotify.com/intl-pt/artist/1V81UUTh3efUS7WWoyvuB9"
-          className="transition-all ease-in-out duration-300 bg-[#575959] p-3 rounded-full hover:text-[#1B1C1C] text-[#E8E7E7] hover:bg-[#8381BD]"
+          className="transition-all ease-in-out duration-300 xl:bg-[#575959] p-2 xl:p-3 rounded-full hover:text-[#1B1C1C] text-[#E8E7E7] hover:bg-[#8381BD] bg-transparent backdrop-blur-xl"
         >
-          <BsSpotify size={24} />
+          <BsSpotify className="text-[24px]" />
         </Link>
         <Link
           target="_blank"
           href="https://tidal.com/browse/artist/35880721"
-          className="transition-all ease-in-out duration-300 bg-[#575959] p-3 rounded-full hover:text-[#1B1C1C] text-[#E8E7E7] hover:bg-[#8381BD]"
+          className="transition-all ease-in-out duration-300 xl:bg-[#575959] p-2 xl:p-3 rounded-full hover:text-[#1B1C1C] text-[#E8E7E7] hover:bg-[#8381BD] bg-transparent backdrop-blur-xl"
         >
-          <SiTidal size={24} />
+          <SiTidal className="text-[24px]" />
         </Link>
         <Link
           target="_blank"
           href="https://www.deezer.com/br/artist/191764857"
-          className="transition-all ease-in-out duration-300 bg-[#575959] p-3 rounded-full hover:text-[#1B1C1C] text-[#E8E7E7] hover:bg-[#8381BD]"
+          className="transition-all ease-in-out duration-300 bg-transparent backdrop-blur-xl xl:bg-[#575959] p-2 xl:p-3 rounded-full hover:text-[#1B1C1C] text-[#E8E7E7] hover:bg-[#8381BD] "
         >
-          <FaDeezer size={24} />
+          <FaDeezer className="text-[24px]" />
         </Link>
       </div>
     </>
