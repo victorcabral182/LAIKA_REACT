@@ -76,44 +76,44 @@ export default function Home() {
         activeMenuItem={activeMenuItem}
         scrollTo={handleScroll}
       />
-      <div className="w-full h-full">
-        <div
+      <main className="w-full h-full">
+        <section
           ref={firstRef}
           className="boxParallax bg1 flex flex-col justify-center items-center gap-6"
         >
           <FirstContent />
-        </div>
-        <div className="text-[#E8E7E7] bg-[#3D71B7] text-justify py-20 xl:px-[400px] flex flex-col gap-4">
+        </section>
+        <section className="text-[#E8E7E7] bg-[#3D71B7] text-justify py-20 xl:px-[400px] flex flex-col gap-4">
           <SecondContent />
-        </div>
-        <div
+        </section>
+        <section
           ref={videosRef}
           className="boxParallax bg2 flex flex-col justify-center items-center"
         >
           <h3 className="text-[72px] xl:text-[144px] mb-4 font-semibold uppercase text-[#E8E7E7]">
             VÍDEOS
           </h3>
-        </div>
-        <div className="text-[#777] bg-[#C6EFAB] text-justify py-20 px-4 xl:px-[400px] flex flex-col justify-center xl:flex-row xl:justify-between gap-4 xl:gap-8 items-center">
+        </section>
+        <section className="text-[#777] bg-[#C6EFAB] text-justify py-20 px-4 xl:px-[400px] flex flex-col justify-center xl:flex-row xl:justify-between gap-4 xl:gap-8 items-center">
           <ThirdContent />
-        </div>
-        <div
+        </section>
+        <section
           ref={lyricsRef}
           className="boxParallax bg3 flex flex-col justify-center items-center"
         >
           <h3 className="text-[72px] xl:text-[144px] mb-4 font-semibold uppercase text-[#E8E7E7]">
             LETRAS
           </h3>
-        </div>
-        <div className="text-[#1B1C1C] bg-[#E8E7E7] py-20 px-4 xl:px-[400px] flex flex-col justify-between gap-8">
+        </section>
+        <section className="text-[#1B1C1C] bg-[#E8E7E7] py-20 px-4 xl:px-[400px] flex flex-col justify-between gap-8">
           <LyricsContent />
-        </div>
-        <div ref={contactRef} className="boxParallax bg4" />
-        <div className="w-full p-2 bg-[#E8E7E7]" />
-        <div className="text-[#E8E7E7] bg-[#1B1C1C] text-center p-10 gap-4">
+        </section>
+        <section ref={contactRef} className="boxParallax bg4" />
+        <section className="w-full p-2 bg-[#E8E7E7]" />
+        <footer className="text-[#E8E7E7] bg-[#1B1C1C] text-center p-10 gap-4">
           <p>Todos os direitos reservados - 2024</p>
-        </div>
-      </div>
+        </footer>
+      </main>
     </>
   )
 }
