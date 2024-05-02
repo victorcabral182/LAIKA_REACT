@@ -1,7 +1,7 @@
 export const SecondContent = () => {
   return (
-    <>
-      <h3 className="text-[48px] mb-4 font-semibold uppercase">
+    <section className="px-4">
+      <h3 className="text-[32px] xl:text-[48px] mb-4 font-semibold uppercase">
         S.L.D.S.E.M.A.N
       </h3>
       <p className="text-lg">
@@ -30,6 +30,6 @@ export const SecondContent = () => {
       <button className="bg-[#8381BD] py-4 px-6 text-lg font-bold w-[200px] mt-8 uppercase text-[#E8E7E7]">
         Ouça agora
       </button>
-    </>
+    </section>
   )
 }
