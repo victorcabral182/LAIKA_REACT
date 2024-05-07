@@ -25,6 +25,12 @@ body {
   background-attachment: fixed;
 }
 
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .boxParallax {
+    background-attachment: scroll; /* Altera a propriedade de fixo para rolar no Safari */
+  }
+}
+
 .bg1 {
   background-image: url("../assets/imagens/bg1.png");
 }
