@@ -37,7 +37,7 @@ export const Header = ({
         <Image
           src={logo}
           alt="logo laika"
-          className="w-[200px] xl:w-[300px] z-50"
+          className="w-[170px] xl:w-[300px] z-50"
           priority
         />
         <div
