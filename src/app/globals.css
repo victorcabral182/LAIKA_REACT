@@ -6,6 +6,7 @@ html,
 body {
   margin: 0;
   height: 100%;
+  width: 100%;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,12 +19,10 @@ body {
 
 .boxParallax {
   height: 100%;
-  background-size: cover;
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 100vh;
-  max-height: 100vh;
 }
 
 .bg1 {
