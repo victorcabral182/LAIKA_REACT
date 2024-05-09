@@ -68,7 +68,7 @@ export const SocialLinks = () => {
       </div>
       <div
         className={`transition-all duration-200 ease-in flex fixed xl:hidden left-4 w-[36px] flex-col gap-4 ${
-          active ? "h-[370px]" : "h-[0px]"
+          active ? "h-[370px]" : "h-[36px]"
         } bottom-4 z-[19] bg-[#1B1C1C] rounded-full`}
       >
         <Link
