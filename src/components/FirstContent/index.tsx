@@ -5,6 +5,7 @@ export const FirstContent = () => {
   return (
     <>
       <Image
+        priority
         src={capaNevoeiro}
         alt="capa nevoeiro"
         className="transition-all duration-75 ease-in-out w-[75%] xl:w-[35%] drop-shadow-lg -rotate-[3deg] hover:rotate-0 mt-16"
