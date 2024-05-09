@@ -3,7 +3,7 @@ export const ThirdContent = () => {
     <>
       <div className="w-full">
         <iframe
-          className="w-[100vw] md:w-[75vw] lg:w-[50vw] h-[calc(100vw/1.5)] md:h-[calc(75vw/1.5)] lg:h-[calc(50vw/1.5)] 2xl:w-[35vw] 2xl:h-[calc(35vw/1.5)] mx-auto"
+          className="w-[90vw] md:w-[75vw] lg:w-[50vw] h-[calc(100vw/1.5)] md:h-[calc(75vw/1.5)] lg:h-[calc(50vw/1.5)] 2xl:w-[35vw] 2xl:h-[calc(35vw/1.5)] mx-auto"
           width="560"
           height="315"
           src="https://www.youtube.com/embed/0nFten1JIwo?si=rtxH140kMVq-JFXT"

@@ -120,13 +120,13 @@ export default function Home() {
           <h3 className="text-[72px] xl:text-[144px] mb-4 font-semibold uppercase text-[#E8E7E7] select-none">
             Contato
           </h3>
-          <div className="flex flex-col gap-8 justify-center items-center p-16 bg-transparent backdrop-blur-lg lg:w-[35%] rounded-full">
-            <div className="flex gap-2 text-[#E8E7E7] font-semibold text-xl cursor-text">
+          <div className="flex flex-col gap-8 lg:justify-center lg:items-center p-4 lg:p-16 bg-transparent backdrop-blur-lg w-fit lg:w-[35%] rounded-2xl lg:rounded-full">
+            <div className="flex flex-col lg:flex-row gap-2 text-[#E8E7E7] font-semibold text-xl cursor-text">
               <span className="select-none">E-mail:</span>
               <span className="font-normal">laikanoespaco2@gmail.com</span>
             </div>
             <div
-              className="flex gap-2 text-[#E8E7E7] font-semibold text-xl cursor-pointer"
+              className="flex flex-col lg:flex-row gap-2 text-[#E8E7E7] font-semibold text-xl cursor-pointer"
               onClick={handleWhatsapp}
             >
               <span className="select-none">WhatsApp:</span>
