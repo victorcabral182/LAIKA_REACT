@@ -27,7 +27,7 @@ body {
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   .boxParallax {
-    background-attachment: scroll; /* Altera a propriedade de fixo para rolar no Safari */
+    background-attachment: fixed;
   }
 }
 

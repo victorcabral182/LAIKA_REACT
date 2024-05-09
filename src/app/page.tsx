@@ -69,6 +69,11 @@ export default function Home() {
     }
   }, [])
 
+  const handleWhatsapp = () => {
+    const phoneNumber = "+5527996658616"
+    window.open(`https://web.whatsapp.com/send?phone=${phoneNumber}`)
+  }
+
   return (
     <>
       <Header
@@ -83,7 +88,7 @@ export default function Home() {
         >
           <FirstContent />
         </section>
-        <section className="text-[#E8E7E7] bg-[#3D71B7] text-justify py-20 xl:px-[400px] flex flex-col gap-4">
+        <section className="text-[#E8E7E7] bg-[#3D71B7] text-justify py-20 flex flex-col gap-4">
           <SecondContent />
         </section>
         <section
@@ -94,7 +99,7 @@ export default function Home() {
             VÍDEOS
           </h3>
         </section>
-        <section className="text-[#777] bg-[#C6EFAB] text-justify py-20 px-4 xl:px-[400px] flex flex-col justify-center xl:flex-row xl:justify-between gap-4 xl:gap-8 items-center">
+        <section className="text-[#777] bg-[#C6EFAB] text-justify py-20 px-4 xl:px-[144px] 2xl:px-[432px] flex flex-col justify-center xl:flex-row xl:justify-between gap-4 xl:gap-8 items-center">
           <ThirdContent />
         </section>
         <section
@@ -105,10 +110,30 @@ export default function Home() {
             LETRAS
           </h3>
         </section>
-        <section className="text-[#1B1C1C] bg-[#E8E7E7] py-20 px-4 xl:px-[400px] flex flex-col justify-between gap-8">
+        <section className="text-[#1B1C1C] bg-[#E8E7E7] py-20 px-4 md:px-16 lg:px-[74px] xl:px-[144px] 2xl:px-[432px] flex flex-col justify-between gap-8">
           <LyricsContent />
         </section>
-        <section ref={contactRef} className="boxParallax bg4" />
+        <section
+          ref={contactRef}
+          className="boxParallax bg4 flex flex-col justify-center items-center"
+        >
+          <h3 className="text-[72px] xl:text-[144px] mb-4 font-semibold uppercase text-[#E8E7E7]">
+            Contato
+          </h3>
+          <div className="flex flex-col gap-8 justify-center items-center p-16 bg-transparent backdrop-blur-lg lg:w-[35%] rounded-full">
+            <div className="flex gap-2 text-[#E8E7E7] font-semibold text-xl cursor-text">
+              <span>E-mail:</span>
+              <span className="font-normal">laikanoespaco2@gmail.com</span>
+            </div>
+            <div
+              className="flex gap-2 text-[#E8E7E7] font-semibold text-xl cursor-pointer"
+              onClick={handleWhatsapp}
+            >
+              <span>WhatsApp:</span>
+              <span className="font-normal">+55 (27) 99665-8616</span>
+            </div>
+          </div>
+        </section>
         <section className="w-full p-2 bg-[#E8E7E7]" />
         <footer className="text-[#E8E7E7] bg-[#1B1C1C] text-center p-10 gap-4">
           <p>Todos os direitos reservados - 2024</p>

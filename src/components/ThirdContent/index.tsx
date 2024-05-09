@@ -3,7 +3,7 @@ export const ThirdContent = () => {
     <>
       <div className="w-full">
         <iframe
-          className="w-[100%] h-[calc(100vw/1.5)]"
+          className="w-[100vw] md:w-[75vw] lg:w-[50vw] h-[calc(100vw/1.5)] md:h-[calc(75vw/1.5)] lg:h-[calc(50vw/1.5)] 2xl:w-[35vw] 2xl:h-[calc(35vw/1.5)] mx-auto"
           width="560"
           height="315"
           src="https://www.youtube.com/embed/0nFten1JIwo?si=rtxH140kMVq-JFXT"
@@ -12,7 +12,7 @@ export const ThirdContent = () => {
         />
       </div>
       <div className="flex flex-col gap-6">
-        <p className="text-[#575959] text-base xl:text-lg font-bold">
+        <p className="text-[#575959] text-base lg:text-lg font-bold">
           Clipe oficial da música &quot;Pior Noite do Mês&quot;, do EP
           &quot;Constante&quot;, lançado em 2022.
         </p>

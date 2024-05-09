@@ -6,7 +6,7 @@ interface IMenuNavProps {
 export const MenuNav = ({ activeMenuItem, scrollTo }: IMenuNavProps) => {
   return (
     <>
-      <nav className={`hidden xl:flex gap-[32px] font-bold text-lg pr-4`}>
+      <nav className={`hidden lg:flex gap-[32px] font-bold text-lg pr-4`}>
         <div
           onClick={() => scrollTo(1)}
           className={`${

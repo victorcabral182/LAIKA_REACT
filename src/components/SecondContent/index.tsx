@@ -1,6 +1,6 @@
 export const SecondContent = () => {
   return (
-    <section className="px-4">
+    <section className="px-4 md:px-16 lg:px-[76px] xl:px-[144px] 2xl:px-[432px]">
       <h3 className="text-[32px] xl:text-[48px] mb-4 font-semibold uppercase">
         S.L.D.S.E.M.A.N
       </h3>

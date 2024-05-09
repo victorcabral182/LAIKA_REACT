@@ -12,46 +12,46 @@ export const SocialLinks = () => {
   const [active, setActive] = useReducer((active) => !active, false)
   return (
     <>
-      <div className="hidden fixed xl:flex flex-col gap-4 bottom-4 left-4 z-20">
+      <div className="hidden fixed lg:flex flex-col gap-4 bottom-4 left-4 z-20">
         <Link
           target="_blank"
           href="https://www.instagram.com/laikanoespaco/"
-          className="transition-all ease-in-out duration-300 xl:bg-[#575959] p-2 xl:p-3 rounded-full hover:text-[#1B1C1C] text-[#E8E7E7] hover:bg-[#8381BD] bg-transparent backdrop-blur-xl"
+          className="transition-all ease-in-out duration-300 lg:bg-[#1B1C1C] p-2 xl:p-3 rounded-full hover:text-[#1B1C1C] text-[#E8E7E7] hover:bg-[#8381BD]"
         >
           <AiOutlineInstagram className="text-[24px]" />
         </Link>
         <Link
           target="_blank"
           href="https://www.youtube.com/@LaikaNoEspaco"
-          className="transition-all ease-in-out duration-300 xl:bg-[#575959] p-2 xl:p-3 rounded-full hover:text-[#1B1C1C] text-[#E8E7E7] hover:bg-[#8381BD] bg-transparent backdrop-blur-xl"
+          className="transition-all ease-in-out duration-300 lg:bg-[#1B1C1C] p-2 xl:p-3 rounded-full hover:text-[#1B1C1C] text-[#E8E7E7] hover:bg-[#8381BD] bg-transparent backdrop-blur-xl"
         >
           <AiFillYoutube className="text-[24px]" />
         </Link>
         <Link
           target="_blank"
           href="https://open.spotify.com/intl-pt/artist/1V81UUTh3efUS7WWoyvuB9"
-          className="transition-all ease-in-out duration-300 xl:bg-[#575959] p-2 xl:p-3 rounded-full hover:text-[#1B1C1C] text-[#E8E7E7] hover:bg-[#8381BD] bg-transparent backdrop-blur-xl"
+          className="transition-all ease-in-out duration-300 lg:bg-[#1B1C1C] p-2 xl:p-3 rounded-full hover:text-[#1B1C1C] text-[#E8E7E7] hover:bg-[#8381BD] bg-transparent backdrop-blur-xl"
         >
           <BsSpotify className="text-[24px]" />
         </Link>
         <Link
           target="_blank"
           href="https://tidal.com/browse/artist/35880721"
-          className="transition-all ease-in-out duration-300 xl:bg-[#575959] p-2 xl:p-3 rounded-full hover:text-[#1B1C1C] text-[#E8E7E7] hover:bg-[#8381BD] bg-transparent backdrop-blur-xl"
+          className="transition-all ease-in-out duration-300 lg:bg-[#1B1C1C] p-2 xl:p-3 rounded-full hover:text-[#1B1C1C] text-[#E8E7E7] hover:bg-[#8381BD] bg-transparent backdrop-blur-xl"
         >
           <SiTidal className="text-[24px]" />
         </Link>
         <Link
           target="_blank"
           href="https://www.deezer.com/br/artist/191764857"
-          className="transition-all ease-in-out duration-300 bg-transparent backdrop-blur-xl xl:bg-[#575959] p-2 xl:p-3 rounded-full hover:text-[#1B1C1C] text-[#E8E7E7] hover:bg-[#8381BD] "
+          className="transition-all ease-in-out duration-300 bg-transparent backdrop-blur-xl lg:bg-[#1B1C1C] p-2 xl:p-3 rounded-full hover:text-[#1B1C1C] text-[#E8E7E7] hover:bg-[#8381BD] "
         >
           <FaDeezer className="text-[24px]" />
         </Link>
       </div>
       <div
         style={{ border: "1px solid #E8E7E7" }}
-        className={`flex fixed xl:hidden flex-col gap-4 bottom-4 left-4 z-20 p-1 bg-[#1B1C1C] rounded-full`}
+        className={`flex fixed lg:hidden flex-col gap-4 bottom-4 left-4 z-20 p-1 bg-[#1B1C1C] rounded-full`}
       >
         <div
           className={`transition-all duration-300 ease-in ${
@@ -67,7 +67,8 @@ export const SocialLinks = () => {
         </div>
       </div>
       <div
-        className={`transition-all duration-200 ease-in flex fixed xl:hidden left-4 w-[36px] flex-col gap-4 ${
+        style={{ border: "1px solid #E8E7E7" }}
+        className={`transition-all duration-200 ease-in flex fixed lg:hidden left-4 w-[38px] flex-col gap-4 ${
           active ? "h-[370px]" : "h-[36px]"
         } bottom-4 z-[19] bg-[#1B1C1C] rounded-full`}
       >
