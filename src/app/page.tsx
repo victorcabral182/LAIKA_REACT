@@ -95,7 +95,7 @@ export default function Home() {
           ref={videosRef}
           className="boxParallax bg2 flex flex-col justify-center items-center"
         >
-          <h3 className="text-[72px] xl:text-[144px] mb-4 font-semibold uppercase text-[#E8E7E7]">
+          <h3 className="text-[72px] xl:text-[144px] mb-4 font-semibold uppercase text-[#E8E7E7] select-none">
             VÍDEOS
           </h3>
         </section>
@@ -106,7 +106,7 @@ export default function Home() {
           ref={lyricsRef}
           className="boxParallax bg3 flex flex-col justify-center items-center"
         >
-          <h3 className="text-[72px] xl:text-[144px] mb-4 font-semibold uppercase text-[#E8E7E7]">
+          <h3 className="text-[72px] xl:text-[144px] mb-4 font-semibold uppercase text-[#E8E7E7] select-none">
             LETRAS
           </h3>
         </section>
@@ -117,19 +117,19 @@ export default function Home() {
           ref={contactRef}
           className="boxParallax bg4 flex flex-col justify-center items-center"
         >
-          <h3 className="text-[72px] xl:text-[144px] mb-4 font-semibold uppercase text-[#E8E7E7]">
+          <h3 className="text-[72px] xl:text-[144px] mb-4 font-semibold uppercase text-[#E8E7E7] select-none">
             Contato
           </h3>
           <div className="flex flex-col gap-8 justify-center items-center p-16 bg-transparent backdrop-blur-lg lg:w-[35%] rounded-full">
             <div className="flex gap-2 text-[#E8E7E7] font-semibold text-xl cursor-text">
-              <span>E-mail:</span>
+              <span className="select-none">E-mail:</span>
               <span className="font-normal">laikanoespaco2@gmail.com</span>
             </div>
             <div
               className="flex gap-2 text-[#E8E7E7] font-semibold text-xl cursor-pointer"
               onClick={handleWhatsapp}
             >
-              <span>WhatsApp:</span>
+              <span className="select-none">WhatsApp:</span>
               <span className="font-normal">+55 (27) 99665-8616</span>
             </div>
           </div>
