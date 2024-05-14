@@ -14,6 +14,7 @@ export const SocialLinks = () => {
     <>
       <div className="hidden fixed lg:flex flex-col gap-4 bottom-4 left-4 z-20">
         <Link
+          aria-label="Conheça um pouco mais da banda através do Instagram"
           target="_blank"
           href="https://www.instagram.com/laikanoespaco/"
           className="transition-all ease-in-out duration-300 lg:bg-[#1B1C1C] p-2 xl:p-3 rounded-full hover:text-[#1B1C1C] text-[#E8E7E7] hover:bg-[#8381BD]"
@@ -21,6 +22,7 @@ export const SocialLinks = () => {
           <AiOutlineInstagram className="text-[24px]" />
         </Link>
         <Link
+          aria-label="Acesso ao canal do youtube"
           target="_blank"
           href="https://www.youtube.com/@LaikaNoEspaco"
           className="transition-all ease-in-out duration-300 lg:bg-[#1B1C1C] p-2 xl:p-3 rounded-full hover:text-[#1B1C1C] text-[#E8E7E7] hover:bg-[#8381BD] bg-transparent backdrop-blur-xl"
@@ -28,6 +30,7 @@ export const SocialLinks = () => {
           <AiFillYoutube className="text-[24px]" />
         </Link>
         <Link
+          aria-label="Escute nossas músicas no Spotify"
           target="_blank"
           href="https://open.spotify.com/intl-pt/artist/1V81UUTh3efUS7WWoyvuB9"
           className="transition-all ease-in-out duration-300 lg:bg-[#1B1C1C] p-2 xl:p-3 rounded-full hover:text-[#1B1C1C] text-[#E8E7E7] hover:bg-[#8381BD] bg-transparent backdrop-blur-xl"
@@ -35,6 +38,7 @@ export const SocialLinks = () => {
           <BsSpotify className="text-[24px]" />
         </Link>
         <Link
+          aria-label="Escute nossas músicas no Tidal"
           target="_blank"
           href="https://tidal.com/browse/artist/35880721"
           className="transition-all ease-in-out duration-300 lg:bg-[#1B1C1C] p-2 xl:p-3 rounded-full hover:text-[#1B1C1C] text-[#E8E7E7] hover:bg-[#8381BD] bg-transparent backdrop-blur-xl"
@@ -42,6 +46,7 @@ export const SocialLinks = () => {
           <SiTidal className="text-[24px]" />
         </Link>
         <Link
+          aria-label="Escute nossas músicas no Deezer"
           target="_blank"
           href="https://www.deezer.com/br/artist/191764857"
           className="transition-all ease-in-out duration-300 bg-transparent backdrop-blur-xl lg:bg-[#1B1C1C] p-2 xl:p-3 rounded-full hover:text-[#1B1C1C] text-[#E8E7E7] hover:bg-[#8381BD] "
@@ -73,6 +78,7 @@ export const SocialLinks = () => {
         } bottom-4 z-[19] bg-[#1B1C1C] rounded-full`}
       >
         <Link
+          aria-label="Conheça um pouco mais da banda através do Instagram"
           target="_blank"
           href="https://www.instagram.com/laikanoespaco/"
           className={`transition-all ${
@@ -84,6 +90,7 @@ export const SocialLinks = () => {
           <AiOutlineInstagram className="text-[20px]" />
         </Link>
         <Link
+          aria-label="Acesso ao canal do youtube"
           target="_blank"
           href="https://www.youtube.com/@LaikaNoEspaco"
           className={`transition-all  ${
@@ -96,6 +103,7 @@ export const SocialLinks = () => {
         </Link>
         <Link
           target="_blank"
+          aria-label="Escute nossas músicas no Spotify"
           href="https://open.spotify.com/intl-pt/artist/1V81UUTh3efUS7WWoyvuB9"
           className={`transition-all ${
             active
@@ -106,6 +114,7 @@ export const SocialLinks = () => {
           <BsSpotify className="text-[20px]" />
         </Link>
         <Link
+          aria-label="Escute nossas músicas no Tidal"
           target="_blank"
           href="https://tidal.com/browse/artist/35880721"
           className={`transition-all ${
@@ -117,6 +126,7 @@ export const SocialLinks = () => {
           <SiTidal className="text-[20px]" />
         </Link>
         <Link
+          aria-label="Escute nossas músicas no Deezer"
           target="_blank"
           href="https://www.deezer.com/br/artist/191764857"
           className={`transition-all ${
