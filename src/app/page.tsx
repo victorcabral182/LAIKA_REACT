@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState } from "react"
 import { Header } from "@/components/Header"
 import { FirstContent } from "@/components/FirstContent"
 import { SecondContent } from "@/components/SecondContent"
-import { ThirdContent } from "@/components/ThirdContent"
+import { VideoSection } from "@/components/ThirdContent"
 import { LyricsContent } from "@/components/LyricsContent"
 
 export default function Home() {
@@ -99,8 +99,47 @@ export default function Home() {
             VÍDEOS
           </h3>
         </section>
-        <section className="text-[#777] bg-[#C6EFAB] text-justify py-20 px-4 xl:px-[144px] 2xl:px-[432px] flex flex-col justify-center xl:flex-row xl:justify-between gap-4 xl:gap-8 items-center">
-          <ThirdContent />
+        <section className="text-[#777] bg-[#C6EFAB] text-justify py-20 px-4 xl:px-[144px] 2xl:px-[432px] ">
+          <VideoSection
+            url="https://www.youtube.com/embed/-g2WOc3OQxc?si=YdXqeAoHJo4ZNGgv"
+            title={
+              <p className="text-[#575959] text-base lg:text-lg font-bold">
+                Clipe oficial da música &quot;Distância&quot;, do EP &quot;Sobre
+                lembranças do sol em meio ao nevoeiro&quot;, lançado em 2024.
+              </p>
+            }
+            description={
+              <p className="hidden xl:flex text-[#575959] text-base xl:text-lg">
+                FICHA TÉCNICA: <br />
+                Roteiro e direção: Daniel Bones e Enzo Rodrigues <br />
+                Produção: Victor Cabral e Vitor Toledo <br />
+                Elenco: Lazo Cabral e João Victor <br />
+                Identidade visual: Nathany Less <br />
+                Edição: Daniel Bones <br />
+                Produtora: DanielBones Produções
+              </p>
+            }
+          />
+          <VideoSection
+            url="https://www.youtube.com/embed/0nFten1JIwo?si=rtxH140kMVq-JFXT"
+            title={
+              <p className="text-[#575959] text-base lg:text-lg font-bold">
+                Clipe oficial da música &quot;Pior noite do mês&quot;, do EP
+                &quot;Constante&quot;, lançado em 2022.
+              </p>
+            }
+            description={
+              <p className="hidden xl:flex text-[#575959] text-base xl:text-lg">
+                FICHA TÉCNICA: <br />
+                Roteiro e direção: Daniel Bones <br />
+                Produção: Victor Cabral <br />
+                Elenco: Yasmin Toretta, Thiago Cordeiro e Mayara Maria <br />
+                Identidade visual: Nathany Less <br />
+                Edição: Daniel Bones <br />
+                Produtora: DanielBones Produções
+              </p>
+            }
+          />
         </section>
         <section
           ref={lyricsRef}
