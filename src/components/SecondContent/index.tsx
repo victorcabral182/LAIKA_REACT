@@ -1,4 +1,10 @@
 export const SecondContent = () => {
+  const handleClick = () => {
+    window.open(
+      "https://ditto.fm/sobre-lembrancas-do-sol-em-meio-ao-nevoeiro",
+      "_blank"
+    )
+  }
   return (
     <section className="px-4 md:px-16 lg:px-[76px] xl:px-[144px] 2xl:px-[432px]">
       <h3 className="text-[32px] xl:text-[48px] mb-4 font-semibold uppercase">
@@ -27,8 +33,13 @@ export const SecondContent = () => {
         etérea, usufruindo ao máximo de harmonias, texturas e timbres, e criando
         diálogos com outros estilos, como o shoegaze e o dreampop.
       </p>
-      <button className="bg-[#8381BD] py-4 px-6 text-lg font-bold w-[200px] mt-8 uppercase text-[#E8E7E7]">
-        Ouça agora
+      <button
+        type="button"
+        aria-label="Faça o pre-save do novo álbum"
+        onClick={handleClick}
+        className="bg-[#8381BD] py-4 px-6 text-lg font-bold w-[250px] mt-8 uppercase text-[#E8E7E7]"
+      >
+        Faça o pre-save
       </button>
     </section>
   )
