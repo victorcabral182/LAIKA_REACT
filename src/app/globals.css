@@ -50,3 +50,18 @@ body {
 .bg4 {
   background-image: url("../assets/imagens/IMG_7032.webp");
 }
+
+@media (max-width: 480px) {
+  .bg1 {
+    background-image: url("../assets/imagens/bg1mob.webp");
+  }
+  .bg2 {
+    background-image: url("../assets/imagens/bg-vitor-mob.png");
+  }
+  .bg3 {
+    background-image: url("../assets/imagens/botecomob.webp");
+  }
+  .bg4 {
+    background-image: url("../assets/imagens/IMG_7032mob.webp");
+  }
+}
