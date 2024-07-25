@@ -1,5 +1,5 @@
 import Image from "next/image"
-import albumCover from "../../assets/imagens/distância.webp"
+import albumCover from "../../assets/imagens/capa300x300.jpg"
 
 export const FirstContent = () => {
   const handleClick = () => {
