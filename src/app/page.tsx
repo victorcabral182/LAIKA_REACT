@@ -1,11 +1,11 @@
 "use client"
 
-import React, { useEffect, useRef, useState } from "react"
 import { Header } from "@/components/Header"
 import { FirstContent } from "@/components/FirstContent"
-import { SecondContent } from "@/components/SecondContent"
 import { VideoSection } from "@/components/ThirdContent"
+import { SecondContent } from "@/components/SecondContent"
 import { LyricsContent } from "@/components/LyricsContent"
+import React, { useEffect, useRef, useState, Suspense, lazy } from "react"
 
 export default function Home() {
   const firstRef = useRef<HTMLDivElement>(null)
@@ -74,6 +74,12 @@ export default function Home() {
     window.open(`https://web.whatsapp.com/send?phone=${phoneNumber}`)
   }
 
+  const VideoSectionWrapper = ({ url, title, description }: any) => (
+    <Suspense fallback={<div>Loading...</div>}>
+      <VideoSection url={url} title={title} description={description} />
+    </Suspense>
+  )
+
   return (
     <>
       <Header
@@ -100,7 +106,7 @@ export default function Home() {
           </h3>
         </section>
         <section className="text-[#777] bg-[#C6EFAB] text-justify py-20 px-4 xl:px-[144px] 2xl:px-[432px] ">
-          <VideoSection
+          <VideoSectionWrapper
             url="https://www.youtube.com/embed/-g2WOc3OQxc?si=YdXqeAoHJo4ZNGgv"
             title={
               <p className="text-[#575959] text-base lg:text-lg font-bold">
@@ -120,7 +126,7 @@ export default function Home() {
               </p>
             }
           />
-          <VideoSection
+          <VideoSectionWrapper
             url="https://www.youtube.com/embed/0nFten1JIwo?si=rtxH140kMVq-JFXT"
             title={
               <p className="text-[#575959] text-base lg:text-lg font-bold">
