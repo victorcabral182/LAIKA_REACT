@@ -24,7 +24,7 @@ export const SocialLinks = () => {
         <Link
           aria-label="Acesso ao canal do youtube"
           target="_blank"
-          href="https://www.youtube.com/@LaikaNoEspaco"
+          href="https://www.youtube.com/@LaikaNoEspaco/videos"
           className="transition-all ease-in-out duration-300 lg:bg-[#1B1C1C] p-2 xl:p-3 rounded-full hover:text-[#1B1C1C] text-[#E8E7E7] hover:bg-[#8381BD] bg-transparent backdrop-blur-xl"
         >
           <AiFillYoutube className="text-[24px]" />
@@ -92,7 +92,7 @@ export const SocialLinks = () => {
         <Link
           aria-label="Acesso ao canal do youtube"
           target="_blank"
-          href="https://www.youtube.com/@LaikaNoEspaco"
+          href="https://www.youtube.com/@LaikaNoEspaco/videos"
           className={`transition-all  ${
             active
               ? "ease-in duration-700 opacity-100"
