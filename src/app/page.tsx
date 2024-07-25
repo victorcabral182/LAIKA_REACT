@@ -1,17 +1,18 @@
 "use client"
 
+import dynamic from "next/dynamic"
 import { Header } from "@/components/Header"
 import { FirstContent } from "@/components/FirstContent"
 import { SecondContent } from "@/components/SecondContent"
 import React, { useEffect, useRef, useState } from "react"
-import dynamic from "next/dynamic"
 
 const VideoSection = dynamic(() =>
   import("../components/ThirdContent").then((mod) => mod.VideoSection)
 )
 
-const LazySection = dynamic(() =>
-  import("../components/LazySection").then((mod) => mod.LazySection)
+const LazySection = dynamic(
+  () => import("../components/LazySection").then((mod) => mod.LazySection),
+  { ssr: false }
 )
 
 export default function Home() {
