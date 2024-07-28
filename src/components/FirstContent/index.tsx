@@ -3,7 +3,10 @@ import albumCover from "../../assets/imagens/capa300x300.jpg"
 
 export const FirstContent = () => {
   const handleClick = () => {
-    window.open("https://ditto.fm/distancia-laika-no-espaco", "_blank")
+    window.open(
+      "https://ditto.fm/sobre-lembrancas-do-sol-em-meio-ao-nevoeiro",
+      "_blank"
+    )
   }
   return (
     <>

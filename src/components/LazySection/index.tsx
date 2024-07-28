@@ -10,6 +10,7 @@ export const LazySection = ({ lyricsRef, contactRef }: ILazySectionProps) => {
     const phoneNumber = "+5527996658616"
     window.open(`https://web.whatsapp.com/send?phone=${phoneNumber}`)
   }
+
   return (
     <>
       <section
