@@ -287,7 +287,7 @@ export const LyricsContent = () => {
             <p
               onClick={() => handleClick(e.name)}
               style={{ borderBottom: "1px solid #1B1C1C" }}
-              className="text-[24px] xl:text-[32px] font-bold uppercase"
+              className="text-[24px] xl:text-[32px] font-bold uppercase cursor-pointer"
             >
               {e.name}
             </p>

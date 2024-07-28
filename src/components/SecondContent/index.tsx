@@ -39,7 +39,7 @@ export const SecondContent = () => {
         onClick={handleClick}
         className="bg-[#8381BD] py-4 px-6 text-lg font-bold w-[250px] mt-8 uppercase text-[#E8E7E7]"
       >
-        Faça o pre-save
+        Ouça agora
       </button>
     </section>
   )
