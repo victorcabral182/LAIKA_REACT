@@ -25,6 +25,100 @@ body {
   background-attachment: fixed;
 }
 
+@supports (-webkit-overflow-scrolling: touch) {
+  .boxParallax {
+    background-attachment: scroll;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .boxParallax {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .boxParallax {
+    background-attachment: scroll;
+  }
+}
+
+.bg1 {
+  background-image: url("../assets/imagens/bg1.webp");
+}
+
+.bg2 {
+  background-image: url("../assets/imagens/bg-vitor.webp");
+}
+
+.bg3 {
+  background-image: url("../assets/imagens/boteco.webp");
+}
+
+.bg4 {
+  background-image: url("../assets/imagens/IMG_7032.webp");
+}
+
+@media (max-width: 480px) {
+  .bg1 {
+    background-image: url("../assets/imagens/bg1mob.webp");
+  }
+  .bg2 {
+    background-image: url("../assets/imagens/bg-vitor-mob.png");
+  }
+  .bg3 {
+    background-image: url("../assets/imagens/botecomob.webp");
+  }
+  .bg4 {
+    background-image: url("../assets/imagens/IMG_7032mob.webp");
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .bg1 {
+    background-image: url("../assets/imagens/bg1mob.webp");
+  }
+  .bg2 {
+    background-image: url("../assets/imagens/bg-vitor-mob.png");
+  }
+  .bg3 {
+    background-image: url("../assets/imagens/botecomob.webp");
+  }
+  .bg4 {
+    background-image: url("../assets/imagens/IMG_7032mob.webp");
+  }
+}
+
+/* @tailwind base;
+!!* css antigo
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+.boxParallax {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   .boxParallax {
     height: 100%;
@@ -64,4 +158,4 @@ body {
   .bg4 {
     background-image: url("../assets/imagens/IMG_7032mob.webp");
   }
-}
+} */
